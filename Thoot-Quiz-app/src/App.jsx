@@ -25,6 +25,9 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/contact-us" element={<ContactUs />} /> {/* Add ContactUs route */}
+              <Route path="/contact" element={<ContactUs />} /> 
+              {/* catch-all route */}
+              <Route path="*" element={<p>404: Page Not Found</p>} />
 
               {/* Protected Routes */}
               <Route
