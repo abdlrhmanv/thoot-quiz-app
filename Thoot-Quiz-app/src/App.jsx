@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { QuizProvider } from "./context/QuizContext"; // Import the QuizProvider
 import { ThemeProvider } from "./context/ThemeContext"; // Import ThemeProvider
 import { AuthProvider } from "./context/AuthContext"; // Import AuthProvider
-import Homepage from './components/Homepage'; // Importing as default
+import Homepage from "./components/Homepage"; // Importing as default
 import QuizSetup from "./components/QuizSetup";
 import QuizPage from "./components/QuizPage";
 import ResultsPage from "./components/ResultsPage"; // Import the ResultsPage
@@ -25,14 +25,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/contact-us" element={<ContactUs />} /> {/* Add ContactUs route */}
-              <Route path="/contact" element={<ContactUs />} /> 
-              {/* catch-all route */}
-              <Route path="*" element={<p> 
-                404: Page Not Found
-                </ p>
-              }
-               />
-
+              
               {/* Protected Routes */}
               <Route
                 path="/quizzes"
